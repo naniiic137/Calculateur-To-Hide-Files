@@ -1,0 +1,83 @@
+object Form2: TForm2
+  Left = 309
+  Height = 720
+  Top = 218
+  Width = 1295
+  AllowDropFiles = True
+  BorderStyle = bsDialog
+  Caption = 'Secrurte'
+  ClientHeight = 720
+  ClientWidth = 1295
+  Color = clActiveBorder
+  DesignTimePPI = 120
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDropFiles = FormDropFiles
+  Position = poDesktopCenter
+  LCLVersion = '2.2.6.0'
+  object Memo1: TMemo
+    Left = 16
+    Height = 416
+    Top = 128
+    Width = 504
+    OnChange = Memo1Change
+    OnDragDrop = Memo1DragDrop
+    ReadOnly = True
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 16
+    Height = 31
+    Top = 576
+    Width = 176
+    Caption = 'Save'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object Button2: TButton
+    Left = 560
+    Height = 31
+    Top = 448
+    Width = 176
+    Caption = 'Load'
+    OnClick = Button2Click
+    TabOrder = 2
+  end
+  object FileNameEdit1: TFileNameEdit
+    Left = 16
+    Height = 28
+    Top = 72
+    Width = 1240
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 29
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 3
+    OnChange = FileNameEdit1Change
+  end
+  object Label1: TLabel
+    Left = 528
+    Height = 54
+    Top = 8
+    Width = 281
+    Caption = 'File Selection :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -40
+    Font.Name = 'Segoe UI Black'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox1: TListBox
+    Left = 792
+    Height = 416
+    Top = 128
+    Width = 464
+    ItemHeight = 0
+    OnClick = ListBox1Click
+    TabOrder = 4
+  end
+end
