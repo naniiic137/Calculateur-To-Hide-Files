@@ -1,0 +1,1 @@
+like the name implay it's a app that look like a calculateur but when you type 00000 it will rest and you can make a password from there after that wait just 2 to 3 second and press = and the securit space will open and you can put file to hide
